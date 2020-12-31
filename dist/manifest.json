@@ -1,0 +1,19 @@
+{
+  "admin.js": "admin.js",
+  "admin.css": "styles/admin.css",
+  "admin.js.map": "admin.js.map",
+  "admin.css.map": "styles/admin.css.map",
+  "editor.js": "editor.js",
+  "editor.css": "styles/editor.css",
+  "editor.js.map": "editor.js.map",
+  "editor.css.map": "styles/editor.css.map",
+  "login.js": "login.js",
+  "login.css": "styles/login.css",
+  "login.js.map": "login.js.map",
+  "login.css.map": "styles/login.css.map",
+  "theme.js": "theme.js",
+  "theme.css": "styles/theme.css",
+  "theme.js.map": "theme.js.map",
+  "theme.css.map": "styles/theme.css.map",
+  "images/favicon.ico": "images/favicon.3bb5e12219.ico"
+}

@@ -1,0 +1,155 @@
+/* ------------------------------------------------------------ *\
+    Settings
+\* ------------------------------------------------------------ */
+/**
+* Config.
+*
+* This is an automatically generated file - DO NOT edit manually.
+*/
+/**
+ * Any shared variables between front-end, editor, admin and login bundles.
+ */
+/**
+ * Color palette.
+ *
+ * @see resources/styles/shared/_variables.scss
+ */
+.has-material-red-color {
+  color: #f44336; }
+
+.has-material-red-background-color {
+  background-color: #f44336; }
+
+.has-material-pink-color {
+  color: #e91e63; }
+
+.has-material-pink-background-color {
+  background-color: #e91e63; }
+
+.has-material-purple-color {
+  color: #9c27b0; }
+
+.has-material-purple-background-color {
+  background-color: #9c27b0; }
+
+.has-material-deep-purple-color {
+  color: #673ab7; }
+
+.has-material-deep-purple-background-color {
+  background-color: #673ab7; }
+
+.has-material-indigo-color {
+  color: #3f51b5; }
+
+.has-material-indigo-background-color {
+  background-color: #3f51b5; }
+
+.has-material-blue-color {
+  color: #2196f3; }
+
+.has-material-blue-background-color {
+  background-color: #2196f3; }
+
+.has-material-light-blue-color {
+  color: #03a9f4; }
+
+.has-material-light-blue-background-color {
+  background-color: #03a9f4; }
+
+.has-material-cyan-color {
+  color: #00bcd4; }
+
+.has-material-cyan-background-color {
+  background-color: #00bcd4; }
+
+.has-material-teal-color {
+  color: #009688; }
+
+.has-material-teal-background-color {
+  background-color: #009688; }
+
+.has-material-green-color {
+  color: #4caf50; }
+
+.has-material-green-background-color {
+  background-color: #4caf50; }
+
+.has-material-light-green-color {
+  color: #8bc34a; }
+
+.has-material-light-green-background-color {
+  background-color: #8bc34a; }
+
+.has-material-lime-color {
+  color: #cddc39; }
+
+.has-material-lime-background-color {
+  background-color: #cddc39; }
+
+.has-material-yellow-color {
+  color: #ffeb3b; }
+
+.has-material-yellow-background-color {
+  background-color: #ffeb3b; }
+
+.has-material-amber-color {
+  color: #ffc107; }
+
+.has-material-amber-background-color {
+  background-color: #ffc107; }
+
+.has-material-orange-color {
+  color: #ff9800; }
+
+.has-material-orange-background-color {
+  background-color: #ff9800; }
+
+.has-material-deep-orange-color {
+  color: #ff5722; }
+
+.has-material-deep-orange-background-color {
+  background-color: #ff5722; }
+
+.has-material-brown-color {
+  color: #795548; }
+
+.has-material-brown-background-color {
+  background-color: #795548; }
+
+.has-material-grey-color {
+  color: #9e9e9e; }
+
+.has-material-grey-background-color {
+  background-color: #9e9e9e; }
+
+.has-material-blue-grey-color {
+  color: #607d8b; }
+
+.has-material-blue-grey-background-color {
+  background-color: #607d8b; }
+
+/**
+ * Font sizes.
+ *
+ * @see resources/styles/shared/_variables.scss
+ */
+.has-xs-font-size {
+  font-size: 12px; }
+
+.has-s-font-size {
+  font-size: 16px; }
+
+.has-m-font-size {
+  font-size: 20px; }
+
+.has-l-font-size {
+  font-size: 28px; }
+
+.has-xl-font-size {
+  font-size: 36px; }
+
+/* ------------------------------------------------------------ *\
+    Editor
+\* ------------------------------------------------------------ */
+
+/*# sourceMappingURL=editor.css.map*/
