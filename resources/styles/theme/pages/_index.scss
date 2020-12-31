@@ -58,7 +58,6 @@ section{
                 }
             }
             .__content{
-                font-size: 16px;
                 color: $color-gray;
                 line-height: 24px;
                 letter-spacing: 0.5px;
@@ -179,8 +178,7 @@ section{
         padding-right: 15px;
         span.left_title{
             @include font-roboto-bold;
-            font-size: 30px;
-            text-transform: uppercase;
+            font-size: 28px;
         }
         .left_about_number{
             margin-top: 80px;
@@ -214,9 +212,11 @@ section{
     }
     .__right{
         padding-left: 50px;
+        @include mw-767{
+            padding-left: 15px;
+        }
         .__content{
-            font-size: 18px;
-            line-height: 30px;
+            line-height: 24px;
             letter-spacing: 1px;
         }
 
@@ -292,19 +292,53 @@ section{
             display: block;
             li {
                 line-height: 50px;
-                padding: 0 20px;
-                border-bottom: 1px solid $color-gray;
                 margin-right: 30px;
+                &:first-child{
+                    a{
+                        &.active {
+                            border-top: 1px solid #e3e3e3;
+                        }
+                    }
+                }
                 a{
-                    font-size: 22px;
+                    border-bottom: 1px solid #e3e3e3;
+                    transition: all 0.3s linear 0s;
+                    @include font-roboto-bold;
+                    padding: 20px 15px;
+                    display: block;
                     color: $color-black;
+                    position: relative;
                     &:hover{
                         color: $color-primary;
+                        &:after{
+                            right: -10px;
+                        }
                     }
                     &.active{
+                        transition: all 0.3s linear 0s;
+                        border-top: 1px solid #e3e3e3;
+                        border-left: 1px solid #e3e3e3;
+                        border-right: none;
                         color: $color-primary;
-                        &:hover &:focus{
+                        background: $color-white;
+                        width: calc(100% + 31px);
+                        border-right: none;
+                        z-index: 999;
+                        position: relative;
+                        &:after{
+                            content: none;
                         }
+                    }
+                    &:after{
+                        @include font-awesome;
+                        content: "\f105";
+                        width: auto;
+                        height: auto;
+                        position: absolute;
+                        right: 20px;
+                        top: 20px;
+                        font-size: 20px;
+                        transition: all 0.3s linear 0s;
                     }
                 }
             }
@@ -323,8 +357,6 @@ section{
             }
         }
     }
-
-
 }
 //=========__partner
 .__partners{
@@ -352,7 +384,7 @@ section{
 //=========__feature
 .__feature{
     .__top_title{
-        border-bottom: 1px solid $color-gray;
+        border-bottom: 1px solid #e3e3e3;
         .__title{
             @include font-roboto-bold;
             font-size: 28px;
@@ -368,7 +400,7 @@ section{
     }
     .__bottom_post{
         .__item{
-            border-bottom: 1px solid $color-gray;
+            border-bottom: 1px solid #e3e3e3;
             padding: 12px 0;
             &:hover{
                 figure.--media{

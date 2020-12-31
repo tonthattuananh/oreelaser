@@ -12,6 +12,11 @@ $base-font-size: 16px;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
 }
+@mixin font-awesome{
+    font-family:'Font Awesome 5 Free';
+    font-weight:900;
+}
+
 
 $color-primary: #1a7e67;
 $color-gray-dark: #333333;

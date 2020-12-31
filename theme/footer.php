@@ -61,12 +61,10 @@
                     <p class="--des"><?php echo __('Truy cập độc quyền cung cấp tin tức nhiều hơn nữa','gaumap') ?></p>
 
                     <form action="" class="--subcribe d-flex justify-content-between form">
-                        <!--<input type="text" placeholder="Nhập email . . .">-->
-                        <!--<button class="transition" type="submit">Theo dõi</button>-->
                         <div class="input-group mb-3">
                             <input type="text" class="form-control" placeholder="Nhập email ..." aria-label="Recipient's username" aria-describedby="basic-addon2">
                             <div class="input-group-append">
-                                <button class="btn btn-outline-secondary" type="button">Theo dõi</button>
+                                <button class=" transition btn btn-outline-secondary" type="button">Theo dõi</button>
                             </div>
                         </div>
                     </form>
@@ -84,7 +82,18 @@
         </div>
     </div>
 </footer>
-
+<nav id="mobile_menu" data-fb="<?php theOption('fanpage'); ?>" data-ytb="<?php theOption('youtube'); ?>">
+    <?php
+    wp_nav_menu([
+        'menu'           => 'main-menu',
+        'theme_location' => 'main-menu',
+        'container'      => 'ul',
+        'menu_class'     => '',
+        'walker'         => new STC_Menu_Walker(),
+    ])
+    ?>
+</nav>
+</div>
 		<?php wp_footer(); ?>
 	</body>
 </html>

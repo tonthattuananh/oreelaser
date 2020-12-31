@@ -5,11 +5,15 @@ header{
     z-index: 9999;
     box-shadow: 5px 0px 8px rgba(0,0,0,.2);
     .menu__top{
-        padding: 10px 80px;
+        padding: 0 80px;
         display: flex;
         align-items: center;
+        @include mw-991{
+            padding: 10px 40px;
+        }
         .top__left{
             img{
+                padding: 10px 0;
                 max-width: 80px;
             }
         }
@@ -42,14 +46,14 @@ header{
                         a{
                             text-transform: uppercase;
                             font-size: 16px;
-                            padding: 26px 20px;
+                            padding: 28px 20px;
                             color: $color-black;
                         }
                         ul.nav__dropdown-menu{
                             display: none;
                             position: absolute;
                             left: 0;
-                            bottom: -48px;
+                            top: 48px;
                             width: 300px;
                             box-shadow: 0 3px 5px rgba(0,0,0,0.3);
                             padding-left: 0;
@@ -66,12 +70,80 @@ header{
                                     a{
                                         color: $color-white;
                                     }
+                                    ul.nav__dropdown-menu{
+                                        display: block;
+                                    }
                                 }
                                 a{
-                                    text-transform: capitalize;
+                                    display: block;
                                     font-size: 14px;
                                     color: $color-black;
-                                    padding: 10px 30px;
+                                    padding: 10px 10px 10px 20px;
+                                }
+                                ul.nav__dropdown-menu{
+                                    display: none;
+                                    position: absolute;
+                                    left: 300px !important;
+                                    top: -1px !important;
+                                    width: 300px;
+                                    box-shadow: 0 3px 5px rgba(0,0,0,0.3);
+                                    padding-left: 0;
+                                    z-index: 999;
+                                    li{
+                                        transition: all 0.3s linear 0s;
+                                        background: $color-white;
+                                        border-bottom: 1px #e1e1e1 solid;
+
+                                        &:first-child{
+                                            border-top: 1px $color-primary solid;
+                                        }
+                                        &:hover{
+                                            background:$color-primary;
+                                            a{
+                                                color: $color-white;
+                                            }
+                                            ul.nav__dropdown-menu{
+                                                display: block;
+                                            }
+                                        }
+                                        a{
+                                            display: block;
+                                            font-size: 14px;
+                                            color: $color-black;
+                                            padding: 10px 10px 10px 20px;
+                                        }
+                                        ul.nav__dropdown-menu{
+                                            display: none;
+                                            position: absolute;
+                                            left: 300px !important;
+                                            top: -1px !important;
+                                            width: 300px;
+                                            box-shadow: 0 3px 5px rgba(0,0,0,0.3);
+                                            padding-left: 0;
+                                            z-index: 999;
+                                            li{
+                                                transition: all 0.3s linear 0s;
+                                                background: $color-white;
+                                                border-bottom: 1px #e1e1e1 solid;
+
+                                                &:first-child{
+                                                    border-top: 1px $color-primary solid;
+                                                }
+                                                &:hover{
+                                                    background:$color-primary;
+                                                    a{
+                                                        color: $color-white;
+                                                    }
+                                                }
+                                                a{
+                                                    display: block;
+                                                    font-size: 14px;
+                                                    color: $color-black;
+                                                    padding: 10px 10px 10px 20px;
+                                                }
+                                            }
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -84,9 +156,18 @@ header{
                 .__search_form{
                     padding: 0 20px;
                     border-right: 1px solid $color-gray;
-                    i{
-                        color: $color-black;
+                    button{
+                        border: none;
+                        background: transparent;
+                        &:focus{
+                            border: none;
+                            outline: none;
+                        }
+                        i{
+                            color: $color-black;
+                        }
                     }
+
                 }
                 .__language{
                     padding: 10px 20px;
@@ -134,6 +215,18 @@ header{
                             }
                         }
                     }
+                }
+            }
+            .__main_menu_mobile{
+                a{
+                    color: $color-primary;
+                    button{
+                        &:focus{
+                            border: none;
+                            outline: none;
+                        }
+                    }
+
                 }
             }
         }
@@ -188,5 +281,133 @@ header{
         @include mw-991{
             left: 5%;
         }
+    }
+}
+.__search_form_inner{
+    transition: all 2s linear 0s;
+    background:  #333333e8;
+    position: fixed;
+    z-index: 99999999;
+    width: 100%;
+    min-height: 100vh;
+    button#close{
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        background: transparent;
+        border: none;
+        &:focus{
+            outline: none;
+        }
+        i{
+            font-size: 80px;
+            color: $color-white;
+        }
+    }
+    form.--search{
+        max-width: 1200px;
+        width: 50%;
+        input{
+            background: transparent;
+            border: none;
+            border-bottom: 1px solid $color-white;
+            width: 100%;
+            color: $color-white;
+            margin-right: 20px;
+            font-size: 30px;
+            &::placeholder {
+                color: $color-white;
+            }
+            &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+                color: $color-white;
+            }
+            &::-webkit-input-placeholder { /* Edge */
+                color: $color-white;
+            }
+            &:focus{
+                border: none;
+                outline: none !important;
+                border-bottom: 1px solid $color-white;
+                box-shadow: none;
+            }
+        }
+        button{
+            background: transparent;
+            color: $color-white;
+            padding: 10px 20px;
+            border-radius: 20px;
+            border: none;
+            &:focus{
+                outline: none;
+            }
+            i{
+                font-size: 30px;
+            }
+
+        }
+
+    }
+
+    &.hide{
+        display: none !important;
+    }
+}
+
+.mm-menu{
+    .mm-iconbar{
+        background: $color-white;
+        color: $color-primary;
+    }
+    .mm-panels{
+        .mm-panel{
+            background: $color-white;
+            .mm-navbar{
+                background: $color-white;
+                color: $color-primary;
+            }
+            ul.mm-listview{
+                li{
+                    a{
+                        color: $color-primary;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+#button {
+    display: inline-block;
+    background-color: $color-primary;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s,
+    opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+    &:after {
+        content: "\f106";
+        @include font-awesome;
+        font-size: 50px;
+        line-height: 50px;
+        color: #fff;
+    }
+    &:hover {
+        cursor: pointer;
+        background-color: $color-gray;
+    }
+    &:active {
+        background-color: $color-gray;
+    }
+    &.show {
+        opacity: 1;
+        visibility: visible;
     }
 }

@@ -49,6 +49,11 @@ while ($post_query->have_posts()) : $post_query->the_post();
                             ?>
                         </div>
                     </div>
+                    <div class="read_more__btn d-none d-md-block">
+                        <a href="<?php the_permalink(); ?>" class="transition">
+                            <?php echo __('Xem thêm', 'gaumap') ?>
+                        </a>
+                    </div>
                 </div>
                 <div class="__right col-12 col-md-6">
                     <div class="__content">
@@ -62,7 +67,7 @@ while ($post_query->have_posts()) : $post_query->the_post();
                 </div>
 
             </div>
-            <div class="read_more__btn ">
+            <div class="read_more__btn text-center d-block d-md-none">
                 <a href="<?php the_permalink(); ?>" class="transition">
                     <?php echo __('Xem thêm', 'gaumap') ?>
                 </a>

@@ -43,7 +43,7 @@ while ($post_query->have_posts()) : $post_query->the_post();
                 </div>
                 <div class="col-md-6 __value_content">
                     <!-- Tab panes -->
-                    <div class="tab-content">
+                    <div class="tab-content h-100">
                         <?php
                         $product_value = getPostMeta('product_value');
                         $i             = 0;
