@@ -1,0 +1,45 @@
+$font-family-sans-serif: Arial, Helvetica, sans-serif;
+$font-family-serif: Times, 'Times New Roman', serif;
+
+$primary-color: #ffffff;
+$base-font-size: 16px;
+
+@mixin font-roboto{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+@mixin font-roboto-bold{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+$color-primary: #1a7e67;
+$color-gray-dark: #333333;
+$color-gray-light: #f4f4f4;
+$color-gray:#999999;
+$color-black: black;
+$color-white: white;
+
+
+@mixin mw-1440{
+    @media screen and (max-width: 1440px)    {@content}
+}
+
+@mixin mw-1280{
+    @media screen and (max-width: 1280px)    {@content}
+}
+@mixin mw-1024{
+    @media screen and (max-width: 1024px)    {@content}
+}
+@mixin mw-991{
+    @media screen and (max-width: 991px)    {@content}
+}
+@mixin mw-767{
+    @media screen and (max-width: 767px)    {@content}
+}
+@mixin mw-600{
+    @media screen and (max-width: 600px)    {@content}
+}
+@mixin mw-480{
+    @media screen and (max-width: 480px)    {@content}
+}

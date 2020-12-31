@@ -1,0 +1,30 @@
+body{
+    margin: 0;
+    padding: 0;
+    @include font-roboto;
+    font-size: 16px;
+}
+a{
+    text-decoration: none;
+    &:hover{
+        text-decoration: none;
+    }
+}
+img{
+    transition: all .3s linear 0s;
+    max-width: 100%;
+}
+.btn:focus{
+    box-shadow: none;
+}
+.transition{
+    transition: all 0.3s linear 0s;
+}
+
+    .container{
+        width: 1230px;
+        max-width: 100% !important;
+    }
+
+
+

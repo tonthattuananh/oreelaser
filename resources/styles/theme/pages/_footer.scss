@@ -1,0 +1,90 @@
+footer{
+    background: $color-gray-dark;
+    padding: 30px 0;
+    color: $color-white;
+    .__top_title{
+        .__title{
+            @include font-roboto-bold;
+            font-size: 28px;
+            position: relative;
+            margin-bottom: 25px;
+            &:after{
+                content: "";
+                width: 60px;
+                height: 1px;
+                position: absolute;
+                bottom: -10px;
+                left: 0;
+                background: $color-gray;
+            }
+        }
+    }
+    .__bottom_line{
+        ul{
+            padding-left: 0;
+            li{
+                list-style: none;
+                margin-bottom: 5px;
+                color: $color-gray;
+                &:hover{
+                    a{
+                        color: $color-white;
+                    }
+                }
+                a{
+                    color: $color-gray;
+                }
+            }
+        }
+        .--des{
+            color: $color-gray;
+            margin-bottom: 25px;
+        }
+        form.--subcribe{
+            input{
+                background: transparent;
+                border: none;
+                border-bottom: 1px solid $color-gray;
+                max-width: 260px;
+                color: $color-white;
+                margin-right: 20px;
+                &:focus{
+                    border: none;
+                    outline: none !important;
+                    border-bottom: 1px solid $color-gray;
+                    box-shadow: none;
+                }
+            }
+            button{
+                background: $color-gray;
+                color: $color-white;
+                padding: 10px 20px;
+                border-radius: 20px;
+                border: none;
+                border-top-left-radius: 20px !important;
+                border-bottom-left-radius: 20px !important;
+                &:hover{
+                    background: $color-primary;
+                }
+            }
+        }
+        ul.--social{
+            margin-top: 50px;
+            li{
+                flex: 0 0 10%;
+                background: $color-gray;
+                margin-right: 10px;
+                padding: 5px;
+                &:hover{
+                    background: $color-primary;
+                }
+                a{
+                    padding: 5px;
+                    i{
+                        color: $color-white;
+                    }
+                }
+            }
+        }
+    }
+}

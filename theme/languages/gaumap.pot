@@ -1,0 +1,133 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: SOTECO\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-12-22 09:35+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.5.0; wp-5.6\n"
+"X-Domain: gaumap"
+
+#: setup/theme-options.php:38
+msgid "Banner giữa phải"
+msgstr ""
+
+#: setup/theme-options.php:37
+msgid "Banner giữa trái"
+msgstr ""
+
+#: setup/theme-options.php:25
+msgid "cau-hinh-website"
+msgstr ""
+
+#: setup/post-types/sample.php:50
+msgid "Cài đặt"
+msgstr ""
+
+#: setup/theme-options.php:24
+msgid "Cấu hình website"
+msgstr ""
+
+#: setup/gutenberg_blocks.php:6 setup/blocks/sample.php:6
+msgid "Demo Block"
+msgstr ""
+
+#: setup/theme-options.php:54
+msgid "Email"
+msgstr ""
+
+#: setup/theme-options.php:63
+msgid "Fanpage"
+msgstr ""
+
+#. Name of the theme
+msgid "hda/theme"
+msgstr ""
+
+#: setup/theme-options.php:42
+msgid "lien-he"
+msgstr ""
+
+#: setup/theme-options.php:41 setup/theme-options.php:45
+msgid "Liên hệ"
+msgstr ""
+
+#: setup/users/auth.php:68 setup/users/auth.php:107
+msgid "Mã nhận dạng không chính xác"
+msgstr ""
+
+#: setup/post-types/sample.php:55
+msgid "Nổi bật"
+msgstr ""
+
+#: setup/theme-options.php:66
+msgid "Nội dung trang liên hệ"
+msgstr ""
+
+#: setup/users/auth.php:27
+msgid "Token mismatch!"
+msgstr ""
+
+#: part_templates/breadcrumb.php:11
+msgid "Trang chủ"
+msgstr ""
+
+#: setup/theme-options.php:48
+msgid "Tên công ty"
+msgstr ""
+
+#: setup/theme-options.php:28
+msgid "Tùy chỉnh"
+msgstr ""
+
+#: setup/theme-options.php:68
+msgid "Vị trí công ty trên bản đồ"
+msgstr ""
+
+#: setup/users/auth.php:31
+msgid "Your username or password does not match, please try again!"
+msgstr ""
+
+#: setup/theme-options.php:60
+msgid "Zalo"
+msgstr ""
+
+#: setup/theme-options.php:51
+msgid "Đia chỉ"
+msgstr ""
+
+#: setup/theme-options.php:57
+msgid "Điện thoại"
+msgstr ""
+
+#: setup/theme-options.php:32
+msgid "Ảnh bài viết mặc định"
+msgstr ""
+
+#: setup/theme-options.php:35
+msgid "Ảnh favicon"
+msgstr ""
+
+#: setup/theme-options.php:33
+msgid "Ảnh logo máy tính"
+msgstr ""
+
+#: setup/theme-options.php:34
+msgid "Ảnh logo điện thoại"
+msgstr ""
+
+#: setup/theme-options.php:36
+msgid "Ảnh slider"
+msgstr ""
+
+#: setup/theme-options.php:31
+msgid "Ảnh thương hiệu"
+msgstr ""
